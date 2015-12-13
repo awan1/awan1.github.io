@@ -1,117 +1,128 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE HTML>
 <!--
-TEMPLATE DESCRIPTION
-~~~~~~~~~~~~~~~~~~~~
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
-
-Name       : Stratagem 
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20130707
-
+	Twenty by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Sublime & Floobits Tutorial - Adrian Wan</title>
-<meta name="keywords" content="" />
-<meta name="description" content="A collection of useful Vim tricks." />
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="keys.css" type="text/css" />
-<!--[if IE 6]>
-<link href="default_ie6.css" rel="stylesheet" type="text/css" />
-<![endif]-->
+<html>
+	<head>
+		<title>Vim Tricks - Adrian Wan</title>
+		<meta charset="utf-8" />
+    <meta name="description" content="A collection of useful Vim tricks." />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/keys.css" type="text/css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 
-<!-- Google analytics script -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-69121908-1', 'auto');
-  ga('send', 'pageview');
-</script>
-</head>
+    <!-- Google analytics script -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-69121908-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+	</head>
+	<body class="no-sidebar">
+		<div id="page-wrapper">
 
-<body id="top"> 
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
-<script type="text/javascript" src="js/scrollingSidebar.js"></script>
+			<!-- Header -->
+			<header id="header">
+				<h1 id="logo"><a href="index.html">Adrian <span>Wan</span></a></h1>
+				<nav id="nav">
+					<ul>
+            <li class="current"><a href="index.html">Welcome</a></li>
+						<li class="submenu">
+							<a href="#">More</a>
+							<ul>
+								<li><a href="resume.html">Resum&eacute;</a></li>
+								<li class="submenu">
+									<a href="#">Posts</a>
+									<ul>
+										<li><a href="posts.html">Top</a></li>
+										<li><a href="vim-tricks.html">Vim Tricks</a></li>
+										<li><a href="success-in-swat-cs.html">Success in Swat CS</a></li>
+										<li><a href="subl-floo-tutorial.html">Floobits & Sublime</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="contact.html" class="button special">Contact Me</a></li>
+					</ul>
+				</nav>
+			</header>
 
-<div id="wrapper">
-  <div id="menu-wrapper">
-    <div id="menu" class="container">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="current_page_item"><a href="projects.html">Projects</a></li>
-        <li><a href="resume.html">Resum&eacute;</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <!-- end #menu --> 
-  </div>
-  <div id="header-wrapper">
-    <div id="header" class="container">
-      <div id="logo">
-        <p>Things I do instead of schoolwork</p>
-      </div>
-    </div>
-  </div>
+			<!-- Main -->
+			<article id="main">
 
-  <div id="page" class="container">
-    <div id="content">
-      <div class="title">
-        <h2 id="art-title">Vim Tricks</h2>
-        <span class="byline">Ways to make Vim even better.</span>
-      </div>
-      <ul class="style3">
-        <li class="first">
-          <p>I love Vim. I use more powerful editors all the time (Sublime, PyCharm) and my first customization is always to get Vim emulation set up. Here's a collection of useful tricks I've picked up; some are Vim movements, others are just for the Vim editor.</p>
-          <p>(Last update: 2014-12-17)</p>
-        </li>
+				<header class="special container">
+					<span class="icon fa-gears"></span>
+					<h2><strong>Vim</strong> Tricks</h2>
+					<p>Ways to make Vim even better.</p>
+				</header>
 
-        <li>
-          <h2 id="tabs">Tabs (Vim editor)</h2>
-          <p>Open multiple files in the same window with shared buffers. It's really easy:
-          <ul class="inline">
-            <li> <tt>$ vim -p file1 file2 file3</tt> opens three files in different tabs. </li>
-            <li>Switch between tabs with <tt>gt</tt> and <tt>gT</tt> in command mode, or <tt>ngt</tt> (where <tt>n</tt> is the index of the tab starting at 1).</li>
-            <li>The buffer is the same across tabs, so yanking/pasting across tabs is easy (just use <tt>y</tt> and <tt>p</tt> as you would in a single document).</li>
-            <li>Close a tab with the usual <tt>:wq</tt> or <tt>:q!</tt></li>
-            <li>Add a tab with <tt>:tabe filename</tt>.</li>
+				<!-- One -->
+				<section class="wrapper style4 container">
+
+					<!-- Content -->
+					<div class="content">
+						<section>
+							<header>
+								<h2 id="preamble">Preamble</h2>
+							</header>
+              <p>I love Vim. I use more powerful editors all the time (Sublime, PyCharm) and my first customization is always to get Vim emulation set up. Here's a collection of useful tricks I've picked up; some are Vim movements, others are just for the Vim editor.</p>
+              <p>(Last update: 2014-12-17)</p>
+
+              <h2 id="tabs">Tabs (Vim editor)</h2>
+              <p>Open multiple files in the same window with shared buffers. It's really easy:
+              <ul class="inline">
+                <li> <tt>$ vim -p file1 file2 file3</tt> opens three files in different tabs. </li>
+                <li>Switch between tabs with <tt>gt</tt> and <tt>gT</tt> in command mode, or <tt>ngt</tt> (where <tt>n</tt> is the index of the tab starting at 1).</li>
+                <li>The buffer is the same across tabs, so yanking/pasting across tabs is easy (just use <tt>y</tt> and <tt>p</tt> as you would in a single document).</li>
+                <li>Close a tab with the usual <tt>:wq</tt> or <tt>:q!</tt></li>
+                <li>Add a tab with <tt>:tabe filename</tt>.</li>
+              </ul>
+              <p>This information was gleaned from <a href="http://stackoverflow.com/a/53668/2452770">this Stack Overflow post</a>. Happy tabbing!</p>
+
+					</div>
+
+				</section>
+
+			</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+          <ul class="icons">
+            <!-- <li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li> -->
+            <!-- <li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li> -->
+            <li><a href="http://www.linkedin.com/in/adrianwan2" class="icon circle fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <!-- <li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li> -->
+            <li><a href="http://www.github.com/awan1" class="icon circle fa-github"><span class="label">Github</span></a></li>
+            <li><a href="http://stackoverflow.com/users/2452770/a-wan" class="icon circle fa-stack-overflow"><span class="label">StackOverflow</span></a></li>
+            <li><a href="https://soundcloud.com/adrian-wan" class="icon circle fa-soundcloud"><span class="label">Soundcloud</span></a></li>
           </ul>
-          <p>This information was gleaned from <a href="http://stackoverflow.com/a/53668/2452770">this Stack Overflow post</a>. Happy tabbing!</p>
-        </li>
-      </ul>
 
-      <!-- 
-      TODO: change this to be general tricks, add the ctrl+r reverse-i search for
-      terminals
-      also redshift for school linux stuff
-      -->
+					<ul class="copyright">
+						<li>&copy; Adrian Wan 2015</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
 
-    </div>
-    <div id="sidebar" class="sidebar">
-      <div class="box2">
-       <div class="title">
-        <h2>Contents</h2>
-       </div> 
-       <ul class="style2">
-        <li><a href="#art-title">Introduction</a></li>
-        <li><a href="#tabs">Tabs</a></li>
-        <li><a href="projects.html">Back to Projects</a></li>
-       </ul>
-      </div>
-    </div>
-</div>
+				</footer>
 
-</div>
+		</div>
 
-<div id="copyright" class="container">
-  <p>Copyright (c) 2015 Adrian Wan. All rights reserved. | Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>.</p>
-</div>
-</body>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
