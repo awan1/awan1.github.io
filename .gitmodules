@@ -1,0 +1,3 @@
+[submodule "assets/fonts/font-mfizz"]
+	path = assets/fonts/font-mfizz
+	url = https://github.com/fizzed/font-mfizz.git
